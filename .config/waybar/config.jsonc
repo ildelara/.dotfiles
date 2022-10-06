@@ -1,0 +1,54 @@
+{
+    "layer": "top",
+    "output": ["DP-1"],
+    "height": 25,
+    "spacing": 0,
+    "modules-left": ["wlr/workspaces"],
+    "modules-center": ["clock", "custom/weather"],
+    "modules-right": [
+        "custom/vpn",
+        "pulseaudio",
+        "custom/updates",
+        "hyprland/language"
+    ],
+    "clock": {
+        "format": "{: %R   %d/%m}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "custom/updates": {
+        "exec": "(yay -Qu) | wc -l",
+        "interval": 360,
+        "format": " {}",
+        "tooltip": false
+    },
+    "custom/vpn": {
+        "exec": "~/.local/scripts/wireguard.sh",
+        "on-click": "exec ~/.local/scripts/wireguard.sh --toggle",
+        "interval": 3,
+        "format": "{}",
+        "tooltip": false
+    },
+    "custom/weather": {
+        "exec": "$HOME/.config/polybar-forecast/polybar-forecast",
+        "interval": 180,
+        "format": "{}",
+        "tooltip": false
+    },
+    "hyprland/language": {
+        "format": " {}",
+        "format-en": "En",
+        "format-ru": "Ру",
+		"keyboard-name": "vitvlkv Avalanche Keyboard"
+    },
+    "wlr/workspaces": {
+        "all-outputs": true
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " ",
+        "format-icons": {
+            "default": ["", "", "墳", ""]
+        },
+        "on-click": "pavucontrol"
+    }
+}
