@@ -1,0 +1,50 @@
+{
+  "files": [
+    {
+      "name": ".config/hypr",
+      "location": "~",
+      "type": "same"
+    },
+    {
+      "name": ".config/waybar",
+      "location": "~",
+      "type": "same"
+    },
+    {
+      "name": ".config/dunst",
+      "location": "~",
+      "type": "same"
+    },
+    {
+      "name": ".config/fish",
+      "location": "~",
+      "type": "same"
+    },
+    {
+      "name": ".config/kitty",
+      "location": "~",
+      "type": "same"
+    },
+    {
+      "name": ".config/neofetch",
+      "location": "~",
+      "type": "same"
+    },
+    {
+      "name": ".config/nvim",
+      "location": "~",
+      "type": "same"
+    },
+    {
+      "name": ".config/starship.toml",
+      "location": "~",
+      "type": "same"
+    },
+    {
+      "name": "wallpaper",
+      "location": "~",
+      "type": "same"
+    }
+  ],
+  "commands": []
+}
