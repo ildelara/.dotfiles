@@ -4,7 +4,7 @@
     "height": 25,
     "spacing": 0,
     "modules-left": ["wlr/workspaces"],
-    "modules-center": ["clock", "custom/weather"],
+    "modules-center": ["clock", "custom/wttr"],
     "modules-right": [
         "custom/vpn",
         "pulseaudio",
@@ -28,11 +28,12 @@
         "format": "{}",
         "tooltip": false
     },
-    "custom/weather": {
-        "exec": "$HOME/.config/polybar-forecast/polybar-forecast",
+    "custom/wttr": {
+        "exec": "~/.local/bin/weather.py",
         "interval": 180,
         "format": "{}",
-        "tooltip": false
+		"return-type": "json",
+        "tooltip": true
     },
     "hyprland/language": {
         "format": " {}",

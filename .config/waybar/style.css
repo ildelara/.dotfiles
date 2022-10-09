@@ -50,7 +50,7 @@ window#waybar.chromium {
 #memory,
 #disk,
 #network,
-#custom-weather,
+#custom-wttr,
 #custom-vpn,
 #language,
 #pulseaudio {
@@ -73,7 +73,7 @@ window#waybar.chromium {
     margin-right: 0;
 }
 
-#custom-weather {
+#custom-wttr {
     font-family: "Hack", "Weather Icons", "Material Icons";
 }
 
