@@ -41,7 +41,17 @@
       "type": "same"
     },
     {
-      "name": "wallpaper",
+      "name": "wallpapers",
+      "location": "~",
+      "type": "same"
+    },
+    {
+      "name": ".local/scripts",
+      "location": "~",
+      "type": "same"
+    },
+    {
+      "name": ".local/bin/weather.py",
       "location": "~",
       "type": "same"
     }
