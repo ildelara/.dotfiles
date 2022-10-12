@@ -46,7 +46,6 @@ window#waybar.chromium {
 
 #clock,
 #battery,
-#custom-updates,
 #memory,
 #disk,
 #network,
@@ -74,16 +73,12 @@ window#waybar.chromium {
 }
 
 #custom-wttr {
-    font-family: "Hack", "Weather Icons", "Material Icons";
+    font-family: "Hack, Twemoji";
 }
 
 #custom-vpn {
     color: #a6e3a1;
     padding-right: 12px;
-}
-
-#custom-updates {
-    color: #f5c2e7;
 }
 
 #pulseaudio {

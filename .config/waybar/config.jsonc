@@ -8,18 +8,11 @@
     "modules-right": [
         "custom/vpn",
         "pulseaudio",
-        "custom/updates",
         "hyprland/language"
     ],
     "clock": {
         "format": "{: %R   %d/%m}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    },
-    "custom/updates": {
-        "exec": "(yay -Qu) | wc -l",
-        "interval": 360,
-        "format": " {}",
-        "tooltip": false
     },
     "custom/vpn": {
         "exec": "~/.local/scripts/wireguard.sh",
