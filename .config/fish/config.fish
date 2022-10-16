@@ -1,5 +1,5 @@
 function fish_greeting
-    neofetch
+    pfetch
     fish_vi_key_bindings
 end
 if status is-interactive
@@ -17,16 +17,12 @@ alias ll='ls -l --color=auto'
 alias lg='lazygit'
 alias vi='nvim'
 alias vim='nvim'
-alias btw='neofetch'
+alias btw='pfetch'
 alias td='todo'
 
-set -gx editor nvim
+set -gx EDITOR nvim
 
 set XDG_DATA_HOME '~/.local/share'
 set XDG_CONFIG_HOME '~/.config'
 set XDG_STATE_HOME '~/.local/state'
 set XDG_CACHE_HOME '~/.cache'
-
-# Bun
-set -px --path PATH "/home/rowario/.cargo/bin";
-set -px --path PATH "/usr/local/bin";
