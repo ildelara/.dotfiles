@@ -21,6 +21,7 @@ alias btw='pfetch'
 alias td='todo'
 
 set -gx EDITOR nvim
+set -gx PF_INFO "ascii title kernel uptime pkgs editor shell memory"
 
 set XDG_DATA_HOME '~/.local/share'
 set XDG_CONFIG_HOME '~/.config'
