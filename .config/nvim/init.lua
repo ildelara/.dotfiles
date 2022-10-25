@@ -25,8 +25,12 @@ require("packer").startup(function(use)
 	use 'nvim-lua/lsp_extensions.nvim'
 	use 'L3MON4D3/LuaSnip'
 	use 'windwp/nvim-autopairs'
-	use({"iamcco/markdown-preview.nvim", run = function() vim.fn["mkdp#util#install"]() end,})
 	use 'mg979/vim-visual-multi'
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = function() vim.fn["mkdp#util#install"]() end,
+	})
+	use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 	use 'folke/todo-comments.nvim'
 	use 'norcalli/nvim-colorizer.lua'
 	use 'ryanoasis/vim-devicons'
