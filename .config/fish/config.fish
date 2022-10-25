@@ -19,6 +19,7 @@ alias vi='nvim'
 alias vim='nvim'
 alias btw='pfetch'
 alias td='todo'
+alias pn='pnpm'
 
 set -gx EDITOR nvim
 set -gx PF_INFO "ascii title kernel uptime pkgs editor shell memory"
