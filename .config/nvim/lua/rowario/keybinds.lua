@@ -21,3 +21,9 @@ vim.keymap.set("n", "<Leader>fmt", "<cmd>Autoformat<cr>")
 
 -- emmet
 vim.keymap.set("i", "<Leader>e", "<plug>(emmet-expand-abbr)")
+
+-- start in browser
+vim.keymap.set("n", "<Leader>sf", "<cmd>exe ':silent !firefox %'<CR>")
+
+-- tree
+vim.keymap.set("n", "<Leader>n", "<cmd>NvimTreeToggle<CR>")

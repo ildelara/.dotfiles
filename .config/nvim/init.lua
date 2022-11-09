@@ -34,6 +34,13 @@ require("packer").startup(function(use)
 	use 'folke/todo-comments.nvim'
 	use 'norcalli/nvim-colorizer.lua'
 	use 'ryanoasis/vim-devicons'
+	use {
+		'nvim-tree/nvim-tree.lua',
+		requires = {
+			'nvim-tree/nvim-web-devicons',
+		},
+		tag = 'nightly'
+	}
 end)
 
 require("rowario")
