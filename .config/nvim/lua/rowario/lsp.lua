@@ -53,7 +53,8 @@ require('lspconfig').phpactor.setup(config({
 }))
 
 require("lspconfig").tsserver.setup(config({
-	filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" }
+	filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
+	root_dir = function() return vim.loop.cwd() end
 }))
 
 require("lspconfig").rust_analyzer.setup(config({
@@ -100,4 +101,16 @@ require'lspconfig'.sumneko_lua.setup(config({
 		},
 	},
 	filetypes = { "lua" }
+}))
+
+require'lspconfig'.html.setup(config({
+	cmd = { "vscode-html-language-server", "--stdio" },
+	filetypes = { "javascript", "html" },
+	init_options = {
+		configurationSection = { "html", "css", "javascript" },
+		embeddedLanguages = {
+			css = true,
+			javascript = true
+		}
+	}
 }))
