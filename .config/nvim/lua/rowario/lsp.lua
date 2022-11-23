@@ -105,7 +105,7 @@ require'lspconfig'.sumneko_lua.setup(config({
 
 require'lspconfig'.html.setup(config({
 	cmd = { "vscode-html-language-server", "--stdio" },
-	filetypes = { "javascript", "html" },
+	filetypes = { "html" },
 	init_options = {
 		configurationSection = { "html", "css", "javascript" },
 		embeddedLanguages = {
