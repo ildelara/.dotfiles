@@ -6,6 +6,7 @@ end
 
 require("packer").startup(
     function(use)
+        use "ThePrimeagen/vim-be-good"
         use "mattn/emmet-vim"
         use "vim-autoformat/vim-autoformat"
         use "numToStr/Comment.nvim"
