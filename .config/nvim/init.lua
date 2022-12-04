@@ -12,7 +12,7 @@ require("packer").startup(
         use "numToStr/Comment.nvim"
         use {"nvim-lualine/lualine.nvim", requires = {"kyazdani42/nvim-web-devicons", opt = true}}
         use "voldikss/vim-floaterm"
-        use "joshdick/onedark.vim"
+        use "folke/tokyonight.nvim"
         use "andweeb/presence.nvim"
         use "wakatime/vim-wakatime"
         use "nvim-lua/plenary.nvim"
