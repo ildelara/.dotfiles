@@ -13,7 +13,6 @@ require("packer").startup(
         use {"nvim-lualine/lualine.nvim", requires = {"kyazdani42/nvim-web-devicons", opt = true}}
         use "voldikss/vim-floaterm"
         use "folke/tokyonight.nvim"
-        use "andweeb/presence.nvim"
         use "wakatime/vim-wakatime"
         use "nvim-lua/plenary.nvim"
         use "nvim-telescope/telescope.nvim"
@@ -27,7 +26,6 @@ require("packer").startup(
         use "nvim-lua/lsp_extensions.nvim"
         use "L3MON4D3/LuaSnip"
         use "windwp/nvim-autopairs"
-        use "mg979/vim-visual-multi"
         use(
             {
                 "iamcco/markdown-preview.nvim",
