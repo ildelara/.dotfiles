@@ -32,7 +32,7 @@
         "format": " {}",
         "format-en": "En",
         "format-ru": "Ру",
-		"keyboard-name": "vitvlkv Avalanche Keyboard"
+		"keyboard-name": "vitvlkv-avalanche-keyboard"
     },
     "wlr/workspaces": {
         "all-outputs": true
