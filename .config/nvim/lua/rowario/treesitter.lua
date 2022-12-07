@@ -1,3 +1,5 @@
+require "nvim-ts-autotag".setup {}
+
 require "nvim-treesitter.configs".setup {
     ensure_installed = {
         "javascript",
@@ -20,6 +22,9 @@ require "nvim-treesitter.configs".setup {
         additional_vim_regex_highlighting = true
     },
     indent = {
+        enable = true
+    },
+    autotag = {
         enable = true
     }
 }
