@@ -5,11 +5,7 @@
     "spacing": 0,
     "modules-left": ["wlr/workspaces"],
     "modules-center": ["clock", "custom/wttr"],
-    "modules-right": [
-        "custom/vpn",
-        "pulseaudio",
-        "hyprland/language"
-    ],
+    "modules-right": ["custom/vpn", "pulseaudio", "hyprland/language"],
     "clock": {
         "format": "{: %R   %d/%m}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -25,14 +21,14 @@
         "exec": "~/.local/bin/weather.py",
         "interval": 180,
         "format": "{}",
-		"return-type": "json",
+        "return-type": "json",
         "tooltip": true
     },
     "hyprland/language": {
         "format": " {}",
         "format-en": "En",
         "format-ru": "Ру",
-		"keyboard-name": "vitvlkv-avalanche-keyboard"
+        "keyboard-name": "vitvlkv-avalanche-keyboard"
     },
     "wlr/workspaces": {
         "all-outputs": true
