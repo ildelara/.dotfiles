@@ -13,7 +13,8 @@ require "nvim-treesitter.configs".setup {
         "c",
         "json",
         "prisma",
-        "html"
+        "html",
+        "sql"
     },
     sync_install = true,
     highlight = {
@@ -22,7 +23,8 @@ require "nvim-treesitter.configs".setup {
         additional_vim_regex_highlighting = true
     },
     indent = {
-        enable = true
+        enable = true,
+		disable = { "typescript" }
     },
     autotag = {
         enable = true
