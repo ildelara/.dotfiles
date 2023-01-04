@@ -14,13 +14,12 @@ require "nvim-treesitter.configs".setup {
         "json",
         "prisma",
         "html",
-        "sql"
+        "sql",
+		"css"
     },
     sync_install = true,
     highlight = {
         enable = true,
-        use_languagetree = true,
-        additional_vim_regex_highlighting = true
     },
     indent = {
         enable = true,
