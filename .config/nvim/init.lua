@@ -12,7 +12,6 @@ require("packer").startup(
         use "numToStr/Comment.nvim"
         use {"nvim-lualine/lualine.nvim", requires = {"kyazdani42/nvim-web-devicons", opt = true}}
         use "voldikss/vim-floaterm"
-        use "folke/tokyonight.nvim"
         use "ellisonleao/gruvbox.nvim"
         use "wakatime/vim-wakatime"
         use "nvim-lua/plenary.nvim"
@@ -27,7 +26,7 @@ require("packer").startup(
         use "nvim-lua/lsp_extensions.nvim"
         use "L3MON4D3/LuaSnip"
         use "windwp/nvim-autopairs"
-		use "windwp/nvim-ts-autotag"
+        use "windwp/nvim-ts-autotag"
         use(
             {
                 "iamcco/markdown-preview.nvim",
