@@ -117,6 +117,7 @@ require "lspconfig".prismals.setup(
         }
     )
 )
+require "lspconfig".cssls.setup(config())
 
 require "lspconfig".sumneko_lua.setup(
     config(
