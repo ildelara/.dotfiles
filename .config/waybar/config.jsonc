@@ -27,8 +27,7 @@
     "hyprland/language": {
         "format": " {}",
         "format-en": "En",
-        "format-ru": "Ру",
-        "keyboard-name": "vitvlkv-avalanche-keyboard"
+        "format-ru": "Ру"
     },
     "wlr/workspaces": {
         "all-outputs": true
