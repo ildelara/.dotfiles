@@ -6,6 +6,7 @@ end
 
 require("packer").startup(
     function(use)
+        use "andweeb/presence.nvim"
         use "ThePrimeagen/vim-be-good"
         use "mattn/emmet-vim"
         use "vim-autoformat/vim-autoformat"
