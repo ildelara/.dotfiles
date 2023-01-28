@@ -42,7 +42,6 @@ local function config(_config)
             capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities()),
             on_attach = function()
                 Nnoremap("K", ":lua vim.lsp.buf.hover()<CR>")
-                Nnoremap("gd", ":lua vim.lsp.buf.definition()<CR>")
                 Nnoremap("<leader>d", ":lua vim.diagnostic.open_float()<CR>")
                 Nnoremap("<A-CR>", ":lua vim.lsp.buf.code_action()<CR>")
                 Nnoremap("<leader>rn", ":lua vim.lsp.buf.rename()<CR>")
@@ -110,13 +109,8 @@ require("lspconfig").clangd.setup(
     )
 )
 
-require "lspconfig".prismals.setup(
-    config(
-        {
-            filetypes = {"prisma"}
-        }
-    )
-)
+require "lspconfig".prismals.setup(config())
+
 require "lspconfig".cssls.setup(config())
 
 require "lspconfig".sumneko_lua.setup(
@@ -162,3 +156,5 @@ require "lspconfig".html.setup(
         }
     )
 )
+
+require "lspconfig".tailwindcss.setup(config())
