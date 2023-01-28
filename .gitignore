@@ -1,2 +1,3 @@
 fish_variables
 packer_compiled.lua
+.luarc.json
