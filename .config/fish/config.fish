@@ -21,6 +21,8 @@ alias btw='pfetch'
 alias td='todo'
 alias pn='pnpm'
 alias s="kitty +kitten ssh"
+alias wo="pomodoro.sh 'work'"
+alias br="pomodoro.sh 'break'"
 
 set -gx EDITOR nvim
 set -gx PF_INFO "ascii title kernel uptime pkgs editor shell memory"
