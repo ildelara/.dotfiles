@@ -5,6 +5,8 @@ vim.keymap.set("n", "<F3>", "<cmd>noh<CR>")
 vim.keymap.set("n", "<Leader>ff", "<cmd>Telescope find_files hidden=true<CR>")
 vim.keymap.set("n", "<Leader>fg", "<cmd>Telescope live_grep hidden=true<CR>")
 vim.keymap.set("n", "gr", "<cmd>Telescope lsp_references trim_text=true<CR>")
+vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions trim_text=true<CR>")
+-- vim.keymap.set("n", "<Leader>d", "<cmd>Telescope diagnostics trim_text=true<CR>")
 vim.keymap.set("n", "<Leader>rld", "<cmd>LspRestart<CR>")
 vim.keymap.set("n", "<Leader>td", "<cmd>TodoTelescope<CR>")
 

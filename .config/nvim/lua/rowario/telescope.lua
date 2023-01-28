@@ -3,7 +3,7 @@ require("telescope").setup {
         file_ignore_patterns = {
             "/bin/",
             "/obj/",
-            ".git",
+            ".git/",
             "/node_modules/",
             "node_modules/",
             "/.idea/",
@@ -12,5 +12,5 @@ require("telescope").setup {
             "/dist/",
             "%.db"
         }
-    }
+    },
 }
