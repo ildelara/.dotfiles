@@ -8,4 +8,5 @@
 - [Starship](https://github.com/starship/starship)
 - [Fish](https://github.com/fish-shell/fish-shell)
 - [Neovim](https://github.com/neovim/neovim)
+- [Dossier](https://github.com/CallMeEchoCodes/dossier)
 
