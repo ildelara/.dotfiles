@@ -23,6 +23,10 @@ alias pn='pnpm'
 alias s="kitty +kitten ssh"
 alias wo="pomodoro.sh 'work'"
 alias br="pomodoro.sh 'break'"
+alias p="cd ~/projects"
+alias pt="cd ~/projects/typescript"
+alias pw="cd ~/projects/work"
+alias pr="cd ~/projects/rust"
 
 set -gx EDITOR nvim
 set -gx PF_INFO "ascii title kernel uptime pkgs editor shell memory"
