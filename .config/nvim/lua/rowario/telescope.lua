@@ -4,6 +4,7 @@ require("telescope").setup {
             "/bin/",
             "/obj/",
             ".git/",
+            ".next/",
             "/node_modules/",
             "node_modules/",
             "/.idea/",

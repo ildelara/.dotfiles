@@ -15,14 +15,16 @@ require "nvim-treesitter.configs".setup {
         "prisma",
         "html",
         "sql",
-        "css"
+        "css",
+		"go"
     },
     sync_install = true,
     highlight = {
         enable = true
     },
     indent = {
-        enable = true
+        enable = true,
+		disable = {"typescript"}
     },
     autotag = {
         enable = true
