@@ -27,6 +27,7 @@ alias p="cd ~/projects"
 alias pt="cd ~/projects/typescript"
 alias pw="cd ~/projects/work"
 alias pr="cd ~/projects/rust"
+alias rc="wf-recorder -g \"\$(slurp)\""
 
 set -gx EDITOR nvim
 set -gx PF_INFO "ascii title kernel uptime pkgs editor shell memory"
