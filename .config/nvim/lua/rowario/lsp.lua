@@ -160,3 +160,5 @@ require "lspconfig".html.setup(
 require "lspconfig".tailwindcss.setup(config())
 
 require "lspconfig".gopls.setup(config())
+
+require "lspconfig".jsonls.setup(config())
