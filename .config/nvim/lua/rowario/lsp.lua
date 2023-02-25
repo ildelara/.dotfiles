@@ -64,6 +64,9 @@ require("lspconfig").phpactor.setup(
 require("lspconfig").tsserver.setup(
     config(
         {
+            init_options = {
+                hostInfo = "neovim"
+            },
             filetypes = {
                 "javascript",
                 "javascriptreact",
@@ -72,6 +75,7 @@ require("lspconfig").tsserver.setup(
                 "typescriptreact",
                 "typescript.tsx"
             },
+            single_file_support = true,
             root_dir = function()
                 return vim.loop.cwd()
             end
