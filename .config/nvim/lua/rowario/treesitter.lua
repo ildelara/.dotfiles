@@ -14,7 +14,7 @@ require "nvim-treesitter.configs".setup {
         "json",
         "prisma",
         "html",
-        "sql",
+        -- "sql",
         "css",
 		"go"
     },

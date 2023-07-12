@@ -1,5 +1,5 @@
 * {
-    font-family: "Hack Nerd Font, Twemoji";
+    font-family: "Hack, Twemoji";
     font-size: 14px;
 }
 
@@ -52,6 +52,8 @@ window#waybar.chromium {
 #custom-wttr,
 #custom-vpn,
 #language,
+#temperature,
+#cpu,
 #pulseaudio {
     padding: 0 10px;
     color: #ffffff;
@@ -83,6 +85,18 @@ window#waybar.chromium {
 
 #pulseaudio {
     color: #f9e2af;
+}
+
+#cpu {
+    color: #d6a085;
+}
+
+#temperature {
+    color: #92a7d6;
+}
+
+#temperature.critical {
+    color: #f55742;
 }
 
 #pulseaudio.muted {

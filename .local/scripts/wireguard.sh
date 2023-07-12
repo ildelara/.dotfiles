@@ -23,9 +23,9 @@ case "$1" in
 		;;
 	*)
 		if [ "$(connection_status)" = "2" ]; then
-			echo -n 聯
+			echo -n 󰒘
 		else
-			echo -n 輦
+			echo -n 󰒙
 		fi
 		;;
 esac

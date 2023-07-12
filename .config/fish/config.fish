@@ -36,3 +36,10 @@ set XDG_DATA_HOME '~/.local/share'
 set XDG_CONFIG_HOME '~/.config'
 set XDG_STATE_HOME '~/.local/state'
 set XDG_CACHE_HOME '~/.cache'
+
+# pnpm
+set -gx PNPM_HOME "/home/pisya/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

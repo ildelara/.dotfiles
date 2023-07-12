@@ -6,6 +6,12 @@ end
 
 require("packer").startup(
     function(use)
+        use "ellisonleao/gruvbox.nvim"
+        use "folke/tokyonight.nvim"
+        use {"catppuccin/nvim", as = "catppuccin"}
+
+        use "lukas-reineke/indent-blankline.nvim"
+
         use "andweeb/presence.nvim"
         use "ThePrimeagen/vim-be-good"
         use "mattn/emmet-vim"
@@ -13,7 +19,6 @@ require("packer").startup(
         use "numToStr/Comment.nvim"
         use {"nvim-lualine/lualine.nvim", requires = {"kyazdani42/nvim-web-devicons", opt = true}}
         use "voldikss/vim-floaterm"
-        use "ellisonleao/gruvbox.nvim"
         use "wakatime/vim-wakatime"
         use "nvim-lua/plenary.nvim"
         use "nvim-telescope/telescope.nvim"
@@ -28,24 +33,6 @@ require("packer").startup(
         use "L3MON4D3/LuaSnip"
         use "windwp/nvim-autopairs"
         use "windwp/nvim-ts-autotag"
-        use(
-            {
-                "iamcco/markdown-preview.nvim",
-                run = function()
-                    vim.fn["mkdp#util#install"]()
-                end
-            }
-        )
-        use(
-            {
-                "iamcco/markdown-preview.nvim",
-                run = "cd app && npm install",
-                setup = function()
-                    vim.g.mkdp_filetypes = {"markdown"}
-                end,
-                ft = {"markdown"}
-            }
-        )
         use "folke/todo-comments.nvim"
         use "norcalli/nvim-colorizer.lua"
         use "ryanoasis/vim-devicons"

@@ -61,24 +61,30 @@ require("lspconfig").phpactor.setup(
     )
 )
 
+local function organize_imports()
+    local params = {
+        command = "_typescript.organizeImports",
+        arguments = {vim.api.nvim_buf_get_name(0)},
+        title = ""
+    }
+    vim.lsp.buf.execute_command(params)
+end
+
 require("lspconfig").tsserver.setup(
     config(
         {
             init_options = {
-                hostInfo = "neovim"
+                maxTsServerMemory = 8192,
+                userPreferences = {
+                    includeCompletionsForModuleExports = false
+                }
             },
-            filetypes = {
-                "javascript",
-                "javascriptreact",
-                "javascript.jsx",
-                "typescript",
-                "typescriptreact",
-                "typescript.tsx"
-            },
-            single_file_support = true,
-            root_dir = function()
-                return vim.loop.cwd()
-            end
+            commands = {
+                OrganizeImports = {
+                    organize_imports,
+                    description = "Organize Imports"
+                }
+            }
         }
     )
 )
@@ -161,7 +167,7 @@ require "lspconfig".html.setup(
     )
 )
 
-require "lspconfig".tailwindcss.setup(config())
+-- require "lspconfig".tailwindcss.setup(config())
 
 require "lspconfig".gopls.setup(config())
 
